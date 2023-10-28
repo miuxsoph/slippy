@@ -1,6 +1,14 @@
-Elementary Cellular Automata in Python 10 lines, Rules from 0 to 255<br>
+Elementary Cellular Automata in Python 10 lines, Rules from 0 to 255,<br>
+Bitwise Cyclic Tag with Collatz-like Seq in Python(youtube)<br>
 by: ytaki0801<br>
 https://www.youtube.com/watch?v=wGjOLKMcCMA<br>
+https://www.youtube.com/watch?v=cuWR719nzrY<br>
+Slashes, Tip(esolang)<br>
+https://esolangs.org/wiki////,<br>
+https://esolangs.org/wiki/Tip<br>
+McCarthy91 Recursion Function(wikipedia)<br>
+https://en.wikipedia.org/wiki/McCarthy_91_function<br>
+python slip.py<br>
 IP: 1/1000000000000000000000000000000010000000<br>
 Commands: [Fraction(101, 10), 18446744073709551617, 16, 0, 3, 16]<br>
 Enter initial state (0-255): 1<br>
