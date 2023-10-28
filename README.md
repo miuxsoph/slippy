@@ -142,8 +142,8 @@ IP: 1/1000000000000000000000000000000010000000<br>
 `1`<br>
 <br>
 Elementary Cellular Automata in Python 10 lines, Rules from 0 to 255,<br>
-Bitwise Cyclic Tag with Collatz-like Seq in Python(youtube)<br>
-by: ytaki0801<br>
+Bitwise Cyclic Tag with Collatz-like Seq in Python<br>
+by: ytaki0801(youtube)<br>
 https://www.youtube.com/watch?v=wGjOLKMcCMA<br>
 https://www.youtube.com/watch?v=cuWR719nzrY<br>
 <br>
