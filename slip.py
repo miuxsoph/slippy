@@ -2,14 +2,12 @@ T = "0xffffffff00000001/"
 I = "9/3/1"
 P = "/0."
 from fractions import Fraction
+from time import sleep
+
 ip = Fraction(1, 1000000000000000000000000000000010000000)
-commands =[Fraction(101, 10), 18446744073709551617, 16, 0, 3, 16]
+commands =[Fraction(3, 2), 18446744073709551617, 16, 0, 3, 16]
 print("IP:",ip)
 print([cmd for cmd in commands])
-
-def m(n):
-    if n > 100: return n - 10
-    return m(m(n + 11))
 
 def r30(a, b, c):
     if (a, b, c) in [(0, 1, 1), (1, 0, 0), (1, 0, 1), (0, 1, 0)]:
@@ -58,15 +56,21 @@ while ip:
     cmd = commands[int(ci)]
     if isinstance(cmd, Fraction):
         print(f"{eip}")
+        sleep(0.02)
     ip *= Fraction(cmd)
 
     if cmd == 3:
         break
 
+def m(n):
+    if n > 100: return n - 10
+    return m(m(n + 11))
+
 q, r, w = '100100100100100', '101110101011011101001110101110101110100000', 3
 while q[w:]:
     if r[0] == '0': q = q[1:]
     else:
+        sleep(0.01)
         r = r[1:] + r[0]
         if q[0] == '1': q += r[0]
     r = r[1:] + r[0]
