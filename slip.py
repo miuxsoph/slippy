@@ -4,7 +4,7 @@ P = "/0."
 from fractions import Fraction
 from time import sleep
 
-ip = Fraction(1, 1000000000000000000000000000000010000000)
+ip = Fraction(1, 100000000000000000000000000000001)
 commands =[Fraction(3, 2), 18446744073709551617, 16, 0, 3, 16]
 print("IP:",ip)
 print([cmd for cmd in commands])
@@ -21,7 +21,7 @@ c, cn = [0] * cx, [0] * cx
 c[cx // 2:cx // 2 + 8] = r
 
 for _ in range(step):
-    print(''.join(['1' if e == 1 else '0' for e in c[90:130]]))
+    print(''.join(['1' if e == 1 else '0' for e in c[90:123]]))
     for i in range(cx):
         x = c[i - 1] if i > 0 else 0
         z = c[i + 1] if i < cx - 1 else 0
