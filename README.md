@@ -3,8 +3,9 @@ Bitwise Cyclic Tag with Collatz-like Seq in Python(youtube)<br>
 by: ytaki0801<br>
 https://www.youtube.com/watch?v=wGjOLKMcCMA<br>
 https://www.youtube.com/watch?v=cuWR719nzrY<br>
-Slashes, Tip(esolang)<br>
+Slashes, Fractran, Tip(esolang)<br>
 https://esolangs.org/wiki////,<br>
+https://esolangs.org/wiki/Fractran<br>
 https://esolangs.org/wiki/Tip<br>
 McCarthy91 Recursion Function(wikipedia)<br>
 https://en.wikipedia.org/wiki/McCarthy_91_function<br>
