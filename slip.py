@@ -1,22 +1,23 @@
+T = "0xffffffff00000001/"
 I = "9/3/1"
 P = "/0."
 from fractions import Fraction
 ip = Fraction(1, 1000000000000000000000000000000010000000)
-commands = [Fraction(101, 10), 18446744073709551617, 16, 0, 3, 16]
-print("IP:", ip)
-print("Commands:", [cmd for cmd in commands])
+commands =[Fraction(101, 10), 18446744073709551617, 16, 0, 3, 16]
+print("IP:",ip)
+print([cmd for cmd in commands])
 
 def m(n):
     if n > 100: return n - 10
     return m(m(n + 11))
 
-def rule30(a, b, c):
+def r30(a, b, c):
     if (a, b, c) in [(0, 1, 1), (1, 0, 0), (1, 0, 1), (0, 1, 0)]:
         return 1
     else:
         return 0
 
-r = [int(x) for x in format(int(input("Enter initial state (0-255): ")), '08b')]
+r = [int(x) for x in format(int(input("0xffffffff00000001/T:")), '08b')]
 cx, step = 180, 26
 c, cn = [0] * cx, [0] * cx
 c[cx // 2:cx // 2 + 8] = r
@@ -26,7 +27,7 @@ for _ in range(step):
     for i in range(cx):
         x = c[i - 1] if i > 0 else 0
         z = c[i + 1] if i < cx - 1 else 0
-        cn[i] = rule30(x, c[i], z)
+        cn[i] = r30(x, c[i], z)
     c = cn[:]
 
 def slash(I, P):
@@ -46,8 +47,6 @@ def slash(I, P):
                 break
 
 input_val = None
-inputdefined = False
-output = 1
 
 while ip:
     eip = -ip if input_val else ip
@@ -56,7 +55,7 @@ while ip:
     ci = eip % len(commands)
     if ci < 0:
         ci += len(commands)
-    cmd = commands[int(ci)]  # Convert ci to an integer index
+    cmd = commands[int(ci)]
     if isinstance(cmd, Fraction):
         print(f"{eip}")
     ip *= Fraction(cmd)
@@ -73,7 +72,4 @@ while q[w:]:
     r = r[1:] + r[0]
     print(q)
     q = str(m(int(q)))
-
 slash(I, P)
-if inputdefined:
-    print(output(q))
