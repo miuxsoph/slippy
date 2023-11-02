@@ -1,6 +1,5 @@
 Be careful with this one, there is definitely inputs that will produce infinite loops.<br>
-inputs have to be ! or 'space' to meet the ternary input requirement.<br>
-example:<br>
+inputs have to be ! or 'space' to meet the ternary input requirement. e.g.<br>
 inp:`!  ! !`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:`// !/`<br>
 out:`!:/!  ! !`<br>
