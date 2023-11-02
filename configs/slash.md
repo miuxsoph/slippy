@@ -1,5 +1,12 @@
 Be careful with this one, there is definitely inputs that will produce infinite loops.
 inputs have to be ! or 'space' to meet the ternary input requirement.
+example input:`!  ! !`
+              :`// !/`
+        output:`!:/!  ! !`
+               `\// !/`
+               `!  ! !`
+               `6FBEF`
+
 
 `IP: 1/100100100100100`<br>
 `C: [Fraction(3, 2), 18446744073709551617, 16, 0, 3, 16]`<br>
