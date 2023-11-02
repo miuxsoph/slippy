@@ -4,9 +4,9 @@ example:<br>
 inp:`!  ! !`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:`// !/`<br>
 out:`!:/!  ! !`<br>
-`\// !/`<br>
-`!  ! !`<br>
-`6FBEF`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`\// !/`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`!  ! !`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`6FBEF`<br>
 
 
 `IP: 1/100100100100100`<br>
