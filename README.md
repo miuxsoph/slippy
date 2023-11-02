@@ -1,4 +1,8 @@
-
+How to run:<br>
+1. Clone this repository.<br>
+2. Install Python and in this directory enter in your terminal `python slip.py`<br>
+3. For configs enter `python ./configs/a/config.py`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;feel free to add configs and submit a merge requestM<br>
 IP: 1/1000000000000000000000000000000010000000<br>
 [Fraction(101, 10), 18446744073709551617, 16, 0, 3, 16]<br>
 0xffffffff00000001/T:
