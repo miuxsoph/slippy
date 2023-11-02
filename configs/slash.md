@@ -2,7 +2,7 @@ Be careful with this one, there is definitely inputs that will produce infinite 
 inputs have to be ! or 'space' to meet the ternary input requirement.<br>
 example:<br>
 inp:`!  ! !`<br>
-;&nbsp;:`// !/`<br>
+&nbsp;&nbsp;&nbsp;`// !/`<br>
 out:`!:/!  ! !`<br>
 `\// !/`<br>
 `!  ! !`<br>
