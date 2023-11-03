@@ -1,4 +1,6 @@
-Be careful with this one, there is definitely inputs that will produce infinite loops.<br>
+Input requirments for this configuration is ternary e.g. `!` or `space`, slashes construct the output.
+The program number is output as a hexadecimal digit (if input is valid/defined.)
+Thhere are inputs which will produce infinite loops.<br>
 inputs have to be ! or 'space' to meet the ternary input requirement. e.g.<br>
 inp:`!  ! !`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:`// !/`<br>
