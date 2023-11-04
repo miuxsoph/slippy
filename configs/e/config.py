@@ -116,8 +116,6 @@ def m(n):
 initial_hex_value = "100100100100100"  # Initial hex value for conversion to binary
 q, r, w = bin(int(initial_hex_value, 16))[2:], '101110101011011101001110101110101110100000', 3
 
-multiplier = 0xffffffff00000001
-
 while q[w:]:
     if r[0] == '0':
         q = q[1:]
@@ -126,33 +124,12 @@ while q[w:]:
         if q[0] == '1':
             q += r[0]
     r = r[1:] + r[0]
-
-    # Encoding the output strings in Base64
-    encoded_q = base64.b64encode(q.encode()).decode()
+    q = str(m(int(q)))
 
     # Convert Base64 to hexadecimal representation
-    hex_address = int(encoded_q.encode('utf-8').hex(), 16) * multiplier
-    hex_address = "0x{:X}".format(hex_address)
+    hex_address = int(q.encode('utf-8').hex(), 36)
+    hex_address = "0x{:x}".format(hex_address)
     
-    sleep(0.01)
     print(hex_address)
- 
-
-binary_last_value = bin(int(hex_address, 16))[2:]
 
 
-def fizz_buzz_conversion(sequence):
-    result = []
-    for num in sequence:
-        if num % 3 == 0 and num % 5 == 0:
-            result.append("FizzBuzz")
-        elif num % 3 == 0:
-            result.append("Fizz")
-        elif num % 5 == 0:
-            result.append("Buzz")
-        else:
-            result.append(num)
-    return result
-
-result_sequence = fizz_buzz_conversion(range(1, 11))
-print(result_sequence)
