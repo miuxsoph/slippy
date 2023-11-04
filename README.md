@@ -161,4 +161,5 @@ https://esolangs.org/wiki/Acyclic_Tag<br>
 <br>
 McCarthy91 Recursion Function(wikipedia)<br>
 https://en.wikipedia.org/wiki/McCarthy_91_function
-
+<br>
+the .soh10fffe refers to soh-supplementary-private-use-area-b-u-10fffe: https://github.com/PlaceReporter99/soh-supplementary-private-use-area-b-u-10fffe, it is a slip program compiled in sof10fffe lang :-]
